@@ -1,0 +1,11 @@
+### GET ALL BOOKS
+GET http://localhost:3000/users
+
+### CREATE NEW USER
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "abdullah@nexus.com",
+    "password": "Password@1"
+}

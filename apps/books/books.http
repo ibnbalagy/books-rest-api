@@ -1,0 +1,45 @@
+### GET ALL BOOKS
+GET http://localhost:3000/books
+
+### GET CURRENT BOOK
+GET http://localhost:3000/books/review
+
+### GET ALL BOOKS ADDED BY USER
+GET http://localhost:3000/books/user
+
+### GET BOOK BY ID
+GET http://localhost:3000/books/2
+
+### ADD NEW BOOK
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "7 Habits of Highly Effective People",
+    "author": "Cole Stevey",
+    "pages": 1000
+}
+
+### UPDATE BOOK
+PATCH http://localhost:3000/books/update/6
+Content-Type: application/json
+
+{
+    "pages": 214
+}
+
+### DELETE BOOK BY ID
+DELETE http://localhost:3000/books/delete/6
+Content-Type: application/json
+
+### UPLOAD BOOK COVER
+POST http://localhost:3000/books/upload
+Content-Type: application/json
+
+{
+    "csvFile":"g-LOr54jr/Sample-Spreadsheet-100-rows.csv"
+}
+
+### CLEAR DB
+POST http://localhost:3000/books/clear
+Content-Type: application/json
